@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+}
+.nav{
+    width: 100%;
+    height: 10%;
+    /* background-color: red; */
+    display: flex;
+}
+.left{
+    width: 35%;
+    height: 100%;
+    /* background-color: yellow; */
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left p{
+    font-size: 12px;
+}
+.right{
+    width: 75%;
+    height: 100%;
+    padding-left: 40%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu{
+    width: 60%;
+    height: 10%;
+    /* background-color: red; */
+    margin:  0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.fade{
+    opacity: 0.5;
+}
+.menu h5{
+    color: rgb(107, 106, 106);
+}
+
+.image{
+    width: 100%;
+    height: 60%;
+    background-image: url('nasa-Q1p7bh3SHj8-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.301);
+    padding: 50px;
+    position: relative;
+}
+.overlay h2{
+    color: white;
+    float: right;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    /* background-color: rebeccapurple; */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid white;
+}
+.circle p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    opacity: 0.7;
+}
+#c2{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 1px solid white;
+    opacity: 0.4;
+}
+.about{
+    width: 70%;
+    height: 15%;
+    /* background-color: rebeccapurple; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about p{
+    font-family: 'Segoe Script';
+    font-size: 20px;
+}
+.about small{
+    color: rgb(92, 90, 90);
+}
+
+footer{
+    width: 100%;
+    height: 5%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+}
+.left-icon{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+.right-icon{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+
+
+
+@media(max-width: 400px){
+    .left h4{
+        font-size: 12px;
+    }
+    .left{
+        width: 45%;
+    }
+    .right{
+        width: 55%;
+        padding: 0%;
+        font-size: 10px;
+    }
+    .left p{
+        font-size: 8px;
+    }
+    .menu{
+        width: 80%;
+        font-size: 15px;
+    }
+    .overlay h2{
+        font-size: 15px;
+        float: left;
+    }
+    .about{
+        width: 80%;
+    }
+    .about p{
+        font-size: 20px;
+    }
+    .rating i{
+        font-size: 8px;
+    }
+    .about small{
+        font-size: 8px;
+        padding: 10px;
+    }
+    
+    
+}
